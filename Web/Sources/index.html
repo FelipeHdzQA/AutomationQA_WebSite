@@ -22,9 +22,7 @@
     <!--Navigation Bar-->
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"
-          ><img src="/AutomationQA_WebSite/Web/Images/Logo.png"
-        /></a>
+        <a class="navbar-brand" href="#"><img src="/Images/Logo.png"/></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,32 +39,32 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="home.html"
-                >HOME <span class="sr-only">(current)</span></a
+                >LOGIN <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="#about">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SERVICES</a>
+              <a class="nav-link" href="#services">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a class="nav-link" href="#team" tabindex="-1" aria-disabled="true"
                 >OUR TEAM
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a class="nav-link" href="#price" tabindex="-1" aria-disabled="true"
                 >PRICE PLANS
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a class="nav-link" href="#testimonials" tabindex="-1" aria-disabled="true"
                 >TESTIMONIALS
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true"
                 >CONTACT
               </a>
             </li>
@@ -85,28 +83,19 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <!--Pictures got from https://www.pexels.com/-->
-            <img
-              src="/AutomationQA_WebSite/Web/Images/Baner 5.jpg"
-              class="d-block img-fluid"
-            />
+            <img src="/Images/Baner 5.jpg" class="d-block img-fluid" />
             <div class="carousel-caption">
               <h5>Learn about Automation/QA</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="/AutomationQA_WebSite/Web/Images/Baner 9.jpg"
-              class="d-block img-fluid"
-            />
+            <img src="/Images/Baner 9.jpg" class="d-block img-fluid" />
             <div class="carousel-caption">
               <h5>Become an Automation/QA expert</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="/AutomationQA_WebSite/Web/Images/Baner 8.jpg"
-              class="d-block img-fluid"
-            />
+            <img src="/Images/Baner 8.jpg" class="d-block img-fluid" />
             <div class="carousel-caption">
               <h5>IT is constantly evolving</h5>
             </div>
@@ -142,7 +131,7 @@
               This a demo website for performing automation based on the course
               provided by the engineer Felipe Hernandez Escobedo
             </div>
-            <button type="button" id="home-button" class="btn btn-primary">
+            <button type="button" id="home-button" class="btn btn-primary" onclick="window.location.href = '#about';">
               Read more>>
             </button>
           </div>
@@ -219,7 +208,7 @@
         <div class="col-md-3 profile-pic text-center">
           <div class="img-box">
             <img
-              src="/AutomationQA_WebSite/Web/Images/OT1.jpg"
+              src="/Images/OT1.jpg"
               class="img-responsive"
               width="300px"
               height="400px"
@@ -247,7 +236,7 @@
         <div class="col-md-3 profile-pic text-center">
           <div class="img-box">
             <img
-              src="/AutomationQA_WebSite/Web/Images/OT2.jpg"
+              src="/Images/OT2.jpg"
               class="img-responsive"
               width="300px"
               height="400px"
@@ -275,7 +264,7 @@
         <div class="col-md-3 profile-pic text-center">
           <div class="img-box">
             <img
-              src="/AutomationQA_WebSite/Web/Images/OT4.jpg"
+              src="/Images/OT4.jpg"
               class="img-responsive"
               width="300px"
               height="400px"
@@ -303,7 +292,7 @@
         <div class="col-md-3 profile-pic text-center">
           <div class="img-box">
             <img
-              src="/AutomationQA_WebSite/Web/Images/OT5.jpg"
+              src="/Images/OT5.jpg"
               class="img-responsive"
               width="338px"
               height="400px"
@@ -329,5 +318,214 @@
       </div>
     </section>
     <!--------------Promo---------------->
+    <section id="promo">
+      <div class="container">
+        <p>Get Free Domain Name and Web Hosting</p>
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
+      </div>
+    </section>
+    <!--------------Price Plans---------------->
+    <section id="price">
+      <div class="container">
+        <h1>Price Plan</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>Free</h2>
+                <h3>
+                  <p>0$/<span>month</span></p>
+                </h3>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>5GB Space</li>
+                  <li><i class="fa fa-check-circle"></i>10GB Bandwidth</li>
+                  <li><i class="fa fa-times-circle"></i>15GB Email Account</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimited Domain</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimited Support</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a class="buy-btn" href="#">Join Free</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>Start up</h2>
+                <h3>
+                  <p>10$/<span>month</span></p>
+                </h3>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>10GB Space</li>
+                  <li><i class="fa fa-check-circle"></i>100GB Bandwidth</li>
+                  <li><i class="fa fa-check-circle"></i>15GB Email Account</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimited Domain</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimited Support</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a class="buy-btn" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>Buy Now</h2>
+                <h3>
+                  <p>30$/<span>month</span></p>
+                </h3>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>10GB Space</li>
+                  <li><i class="fa fa-check-circle"></i>100GB Bandwidth</li>
+                  <li><i class="fa fa-check-circle"></i>15GB Email Account</li>
+                  <li><i class="fa fa-check-circle"></i>Unlimited Domain</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimited Support</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a class="buy-btn" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>Business</h2>
+                <h3>
+                  <p>50$/<span>month</span></p>
+                </h3>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>20GB Space</li>
+                  <li><i class="fa fa-check-circle"></i>200GB Bandwidth</li>
+                  <li><i class="fa fa-check-circle"></i>50GB Email Account</li>
+                  <li><i class="fa fa-check-circle"></i>Unlimited Domain</li>
+                  <li><i class="fa fa-check-circle"></i>Unlimited Support</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a class="buy-btn" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------Testimonials---------------->
+    <section id="testimonials">
+      <div class="container">
+        <h1>Testimomials</h1>
+        <p class="text-center">Suscribe for more courses like this one.</p>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="profile">
+              <img src="/Images/OT3.jpg" class="user" />
+              <blockquote>
+                "This company has helped me on growing my projects."
+              </blockquote>
+              <h3>
+                Avinash Masabi <span>Co-Funder at MimeTech Services</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="profile">
+              <img src="/Images/OT3.jpg" class="user" />
+              <blockquote>
+                "This company has helped me on growing my projects."
+              </blockquote>
+              <h3>
+                Subhayu Sarkar <span>Co-Funder at MimeTech Services</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="profile">
+              <img src="/Images/OT3.jpg" class="user" />
+              <blockquote>
+                "This company has helped me on growing my projects."
+              </blockquote>
+              <h3>
+                Nabila Premkumar <span>Co-Funder at MimeTech Services</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------Contact---------------->
+    <section id="contact">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Phone No."
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email id"
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+             <button type="submit" class="btn btn-primary">Send Info</button>
+            </form>
+          </div>
+          <div class="col-md-6 contact-info">
+            <div class="follow"><b>Address: </b><i class="fa fa-map-marker"></i> Franklin Road Sacramento, California, US</div>
+            <div class="follow"><b>Phone: </b><i class="fa fa-phone"></i> +1 3737-3838</div>
+            <div class="follow"><b>Email: </b><i class="fa fa-envelope"></i> ingfhdz_automationqa@gmail.com</div>
+            <div class="follow"><label><b>Get Social: </b></label>
+              <a href="#"><i class="fab fa-facebook" style="color: blue;"></i></a>
+              <a href="#"><i class="fab fa-youtube" style="color: red;"></i></a>
+              <a href="#"><i class="fab fa-twitter" style="color: blue;"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g" style="color: green;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+             <!---------------Footer---------------->
+             <section>
+              <div class="container">
+                <p>Made by Ing FHE Tutorials</p>
+              </div>
+              </section>
+              <!--Fix Testimonials, Footer and progress bars.-->
+              <!--Connect form (contact Us and Login) to DB (MySQL).-->
+              <!--Add "Login" Page for starting automation.-->
   </body>
 </html>
