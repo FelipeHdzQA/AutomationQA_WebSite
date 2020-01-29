@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Login Page</title>
+    <title>Login</title>
     <!--External resources-->
     <link rel="stylesheet" href="style-login.css" />
     <link
@@ -32,10 +32,10 @@
           <div class="card-body">
             <!--Difference between GET/POST methods-->
             <form
-              action="/Sources/home.html"
-              onsubmit="return validateForm();"
+              action="login.php"
+              onsubmit="return validateLogin();"
               name="loginForm"
-              method="get"
+              method="POST"
             >
               <div class="input-group form-group">
                 <div class="input-group-prepend">
