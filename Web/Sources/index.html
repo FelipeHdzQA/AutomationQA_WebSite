@@ -16,6 +16,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/ec8de3e5ff.js"></script>
+    <script src="functions.js"></script>
+    <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"/>
   </head>
 
   <body>
@@ -37,10 +39,6 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <!--ml-auto in order to make all the elements in nav bar to be at right-->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html"
-                >LOGIN <span class="sr-only">(current)</span></a
-              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">ABOUT US</a>
@@ -68,6 +66,10 @@
                 >CONTACT
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"
+                >LOGIN <span class="sr-only">(current)</span></a
+              >
           </ul>
         </div>
       </nav>
@@ -136,21 +138,21 @@
             </button>
           </div>
           <div class="col-md-6 skills-bar">
-            <p>Adobe Photoshop</p>
-            <div class="progress-bar">
-              <div class="progress-bar" style="width: 85%;">85%</div>
-            </div>
-            <p>UI Design</p>
-            <div class="progress-bar">
-              <div class="progress-bar" style="width: 70%;">70%</div>
-            </div>
-            <p>WordPress</p>
-            <div class="progress-bar">
-              <div class="progress-bar" style="width: 50%;">50%</div>
+            <p>Programming</p> 
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
             </div>
             <p>CSS & HTML</p>
-            <div class="progress-bar">
-              <div class="progress-bar" style="width: 100%;">100%</div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="85">75%</div>
+            </div>
+            <p>Data Bases</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50">50%</div>
+            </div>
+            <p>API Testing</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="25">25%</div>
             </div>
             <!--
             <div class="progress">
@@ -470,9 +472,10 @@
         <h1>Get in Touch</h1>
         <div class="row">
           <div class="col-md-6">
-            <form class="contact-form">
+            <form id="dataForm" action="form.php" onsubmit="return validateForm();" method="POST" class="contact-form">
               <div class="form-group">
                 <input
+                name="userName"
                   type="text"
                   class="form-control"
                   placeholder="Your Name"
@@ -481,6 +484,7 @@
 
               <div class="form-group">
                 <input
+                name="phone"
                   type="number"
                   class="form-control"
                   placeholder="Phone No."
@@ -489,6 +493,7 @@
 
               <div class="form-group">
                 <input
+                name="emailId"
                   type="email"
                   class="form-control"
                   placeholder="Email id"
@@ -497,6 +502,7 @@
 
               <div class="form-group">
                 <textarea
+                name="comments"
                   class="form-control"
                   rows="4"
                   placeholder="Your Message"
@@ -520,8 +526,12 @@
     </section>
              <!---------------Footer---------------->
              <section>
-              <div class="container">
-                <p>Made by Ing FHE Tutorials</p>
+              <div id="footer" class="py-4 bg-dark text-white-50">
+                <p>Made by Felipe Hernandez.</p>
+                <p>- Computing Engineer</p>
+                <p>- Test Automation Engineer/QA</p>
+                <p>- ISTQB® Certified Tester</p>
+                <h1>Copyright © 2020 license agreement. All rights reserved.</h1>
               </div>
               </section>
               <!--Fix Testimonials, Footer and progress bars.-->
