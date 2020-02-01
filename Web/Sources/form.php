@@ -1,6 +1,6 @@
 <?php
     
-    $servername = $_POST["localhost"];
+    $servername = $_POST["localhost:3306"];
     $username = $_POST["learnaut_admin"];
     $password = $_POST["admin123"];
     $dbName = $_POST["learnaut_Automation"];
